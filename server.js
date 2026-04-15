@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+<<<<<<< HEAD
 const incricoesRoutes = require('./src/routes/incricoes.routes');
 app.use('/incricoes', incricoesRoutes);
 
@@ -17,9 +18,29 @@ app.use('/usuarios', usuariosRoutes);
 
 const imagemRoutes = require("./src/routes/imagem.routes");
 app.use("/imagem", imagemRoutes);
+=======
+const inscricoesRoutes = require('./src/routes/inscricoes.routes');
+
+app.use('/inscricoes', inscricoesRoutes);
+
+
+const eventosRoutes = require('./src/routes/eventos.routes');
+
+app.use('/eventos', eventosRoutes);
+
+
+const usuariosRoutes = require('./src/routes/usuarios.routes');
+
+app.use('/usuarios', usuariosRoutes);
+
+>>>>>>> bc313948374d946d6bdf37cafa6a23a7daf92397
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> bc313948374d946d6bdf37cafa6a23a7daf92397
