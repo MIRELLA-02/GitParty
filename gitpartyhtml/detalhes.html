@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do Evento</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+
+            theme: {
+                extend: {
+
+                    colors: {
+                        "surface-bright": "#fff8f3",
+                        "secondary": "#89502c",
+                        "primary-container": "#392416",
+                        "background": "#fff8f3",
+                        "primary": "#221005",
+                        "surface-variant": "#f6dfc0",
+                        "secondary-container": "#fdb386",
+                        "outline-variant": "#d3c3bb",
+                        "on-primary-container": "#a98a76",
+                        "on-surface": "#251a06"
+                    },
+
+                    spacing: {
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+
+                    fontFamily: {
+                        "label-sm": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg": ["Chivo"],
+                        "title-md": ["Chivo"],
+                        "body-md": ["Work Sans"],
+                        "display-lg": ["Chivo"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen font-body-md text-on-surface">
+
+    <header class="fixed top-0 w-full z-50 border-b border-outline-variant/20 bg-primary-container shadow-[0_12px_20px_rgba(43,26,15,0.15)]">
+        <nav class="flex justify-between items-center h-20 px-margin-desktop max-w-[1280px] mx-auto text-on-primary-container">
+            <div class="text-headline-lg font-headline-lg font-bold text-secondary-container tracking-tighter">
+                Frontier Rodeo
+            </div>
+
+            <div class="hidden md:flex items-center gap-gutter">
+                <a href="#" class="text-on-primary-container/80 hover:text-secondary-container transition-colors text-label-sm font-label-sm">
+                    Calendário
+                </a>
+                <a href="#" class="text-on-primary-container/80 hover:text-secondary-container transition-colors text-label-sm font-label-sm">
+                    Competidores
+                </a>
+                <a href="#" class="text-on-primary-container/80 hover:text-secondary-container transition-colors text-label-sm font-label-sm">
+                    Ranking
+                </a>
+                <a href="#" class="text-on-primary-container/80 hover:text-secondary-container transition-colors text-label-sm font-label-sm">
+                    Galeria
+                </a>
+                <a href="#" class="text-on-primary-container/80 hover:text-secondary-container transition-colors text-label-sm font-label-sm">
+                    Ingressos
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto">
+        <section class="mb-12">
+
+            <div class="mb-8">
+            <a href="home.html" class="back-button">
+             <span class="material-symbols-outlined">arrow_back</span>
+        Voltar para Home
+         </a>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b-2 border-primary-container/20 pb-6">
+                <div>
+                    <span class="text-label-sm font-label-sm text-primary uppercase tracking-widest bg-secondary-container/30 px-3 py-1 mb-2 inline-block">
+                        Detalhes do Evento
+                    </span>
+                    <h1 class="text-display-lg font-display-lg text-primary uppercase leading-none">
+                        Grande Rodeio de Barretos
+                    </h1>
+                </div>
+
+                <div class="flex gap-4">
+                    <button class="editar-btn">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span class="text-label-sm font-label-sm">
+                            EDITAR
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            <div class="lg:col-span-7 space-y-6">
+
+                <div class="imagem-evento">
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcNwoOcLFGJTfU6n4F3Fc3AV-gLBQ9Wd8akE-Jm5OBoTI1FqQlPWBRMIxOpAWrJZXz9LuWwYh-TtzG8lObaTcNRYDloEI0Qdj6KnuQ4J7cY3UDly-JY_3cjXyNPU5BJPiss8VM7REgREeISZNrYSMKEErDZwmlZ1Nh6y1zxdIaBjV9JqoQaYOXQtJfuzH6gwGep6H2aBBaJq3j58KO1-N7wAQGd1WrPrcAof1PtKOjhZ4s7cb-jJFH9axiKzgioqN4Mxk2yfhDTRA"
+                        alt="Rodeio"
+                        class="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+
+                <div class="upload-box">
+                    <div class="flex items-center gap-4">
+
+                        <div class="icone-upload">
+                            <span class="material-symbols-outlined text-secondary-container">
+                                image
+                            </span>
+                        </div>
+
+                        <div>
+                            <p class="text-label-sm opacity-60">
+                                Capa do Evento
+                            </p>
+                            <p class="text-body-md">
+                                barretos_2024_banner.jpg
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="upload-btn">
+                        <span class="material-symbols-outlined">
+                            upload
+                        </span>
+                        UPLOAD DE IMAGEM
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="info-card">
+                    <h2 class="titulo-info">
+                        <span class="material-symbols-outlined">
+                            info
+                        </span>
+                        Informações do Evento
+
+                    </h2>
+
+                    <div class="space-y-6">
+
+                        <div class="linha-info">
+                            <p class="subtitulo-info">Identificador ID</p>
+                            <p class="texto-info">#RD-2024-0815</p>
+                        </div>
+
+                        <div class="linha-info">
+                            <p class="subtitulo-info">Título Oficial</p>
+                            <p class="texto-info">69ª Festa do Peão de Boiadeiro de Barretos</p>
+                        </div>
+
+                        <div class="linha-info">
+                            <p class="subtitulo-info">Data do Evento</p>
+                            <p class="texto-info">15 - 25 Ago, 2024</p>
+                        </div>
+
+                        <div class="linha-info">
+                            <p class="subtitulo-info">Capacidade</p>
+                            <p class="texto-info">35.000 Pessoas</p>
+                        </div>
+
+                        <div class="linha-info">
+                            <p class="subtitulo-info">Localização</p>
+                            <p class="texto-info">
+                                Parque do Peão, Rod. Brig. Faria Lima, km 428
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-detalhes">
+        <div class="footer-content">
+            <div class="footer-logo">
+                Frontier Rodeo
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Contato</a>
+                <a href="#">Imprensa</a>
+
+            </div>
+            <p class="footer-copy">
+                © 2024 Frontier Rodeo Association.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontier Rodeo</title>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#fff8f3",
+                        "secondary": "#89502c",
+                        "secondary-container": "#fdb386",
+                        "primary-container": "#392416",
+                        "background": "#BAA689",
+                        "on-surface": "#251a06",
+                        "primary": "#221005",
+                        "surface-variant": "#f6dfc0",
+                        "on-secondary": "#ffffff"
+                    },
+
+                    spacing: {
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "section-gap": "80px"
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-background text-on-surface min-h-screen">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <nav class="topbar-content">
+
+            <div class="logo">
+                Frontier Rodeo
+            </div>
+
+            <div class="header-buttons">
+
+                <button class="header-btn">
+
+                    <span class="material-symbols-outlined icon-small">
+                        add
+                    </span>
+
+                    <span>Cadastrar Novo Evento</span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    
+    <main class="main-content">
+
+       
+        <div class="title-section">
+
+            <h1 class="main-title">
+                Próximos Eventos
+            </h1>
+
+            <p class="main-subtitle">
+                Acompanhe a adrenalina das arenas mais disputadas do país.
+                Tradição e coragem em cada montaria.
+            </p>
+
+        </div>
+
+       
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <div class="leather-card card-small">
+
+                <div class="card-top">
+
+                    <span class="live-tag">
+                        LIVE
+                    </span>
+
+                    <span class="material-symbols-outlined card-icon">
+                        calendar_today
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h3 class="card-title">
+                        Rodeio de Barretos 2024
+                    </h3>
+
+                    <p class="card-date">
+                        15 DE AGOSTO
+                    </p>
+
+                    <a href="detalhes.html">
+
+                        <button class="details-btn">
+                            Ver Detalhes
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="leather-card card-small">
+
+                <div class="card-top">
+
+                    <span class="material-symbols-outlined card-icon">
+                        calendar_today
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h3 class="card-title">
+                        Jaguariúna Rodeo Festival
+                    </h3>
+
+                    <p class="card-date">
+                        20 DE SETEMBRO
+                    </p>
+
+                    <a href="detalhes.html">
+
+                        <button class="details-btn">
+                            Ver Detalhes
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="leather-card card-small">
+
+                <div class="card-top">
+
+                    <span class="material-symbols-outlined card-icon">
+                        calendar_today
+                    </span>
+                </div>
+
+                <div>
+
+                    <h3 class="card-title">
+                        ExpoLondrina Pro Bull
+                    </h3>
+                    <p class="card-date">
+                        05 DE OUTUBRO
+                    </p>
+                    <a href="detalhes.html">
+
+                        <button class="details-btn">
+                            Ver Detalhes
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="leather-card featured-card md:col-span-2">
+                <div class="featured-image">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF9BqcetLsFH9F8ixwbMPs8-lI4jOR38pdcx40uw95vZQjDHuNR1StZbrMau1NUOOXC2QLZlpovjvnEWCby-RlHlxgwPFDVpRcP5EESisxeGP3xxAUQbe-mEgrU2EgZbCxkXwYu7y6nG_3C1GqqisrGE7WxdpFR3noT-W7Kj4v-G1YiDqGhqdWuG7nrbIYowi8HLvkHw8OMGzaTMQea1KYxbgtkifAUvDHKe136sddtSly-66Z8yTxd6nWd609sE70p5se7PuiYCY"
+                        alt="Rodeio">
+
+                </div>
+
+                <div class="featured-content">
+                    <span class="premium-tag">
+                        EVENTO PREMIUM
+                    </span>
+                    <h3 class="featured-title">
+                        Final Nacional de Cutiano
+                    </h3>
+                    <p class="featured-date">
+                        12 DE DEZEMBRO • ARENA CENTRAL
+                    </p>
+                    <a href="detalhes.html">
+
+                        <button class="featured-btn">
+                            Ver Detalhes
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="leather-card card-small">
+
+                <div class="card-top">
+
+                    <span class="material-symbols-outlined card-icon">
+                        calendar_today
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h3 class="card-title">
+                        Festa do Peão de Americana
+                    </h3>
+
+                    <p class="card-date">
+                        10 DE JUNHO
+                    </p>
+
+                    <a href="detalhes.html">
+
+                        <button class="details-btn">
+                            Ver Detalhes
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                Frontier Rodeo
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Contato</a>
+                <a href="#">Imprensa</a>
+
+            </div>
+
+            <p class="footer-copy">
+                © 2024 Frontier Rodeo Association. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
